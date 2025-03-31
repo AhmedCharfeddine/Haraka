@@ -20,6 +20,7 @@ Then Haraka is for you ✨
 
 ## Roadmap
 
+🔹 Add support for numbers to support their corresponding Arabic letter.
 🔹 Improve word suggestions using a Trie  
 🔹 Add support for common Arabic phrases  
 🔹 Implement a GUI version  
