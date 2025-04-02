@@ -1,8 +1,14 @@
 package core
 
-func Transliterate(latinWord string) string {
-	if latinWord == "fares" {
-		return "فارس"
+import (
+	"github.com/AhmedCharfeddine/Haraka/core/mapping"
+)
+
+const MappingStrategy = "mapping"
+
+func Transliterate(latinWord string, strategy string) string {
+	if strategy == MappingStrategy {
+		return mapping.TransliterateMapping(latinWord)
 	}
-	return "حركة"
+	return latinWord
 }
