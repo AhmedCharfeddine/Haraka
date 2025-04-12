@@ -8,7 +8,7 @@ var TransliterationMap = map[string]string{
 	"ch": "ش", "sh": "ش", "ss": "ص", "3": "ع",
 	"gh": "غ", "8": "غ", "f": "ف", "9": "ق",
 	"k": "ك", "l": "ل", "m": "م", "n": "ن",
-	"h": "ه", "a": "ا",
+	"h": "ه", "a": "ا", "5": "خ", "ou": "و",
 }
 
 func isValidKey(key string) bool {

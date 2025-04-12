@@ -18,5 +18,8 @@ func TransliterateMapping(latinWord string) string {
 		fmt.Fprint(&builder, TransliterationMap[item])
 	}
 
+	// TODO
+	// step 4: handle word ending rules
+
 	return builder.String()
 }
