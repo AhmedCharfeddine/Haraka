@@ -28,8 +28,13 @@ var mappingCmd = &cobra.Command{
 	Long: "Carry out transliteration by mapping each letter/syllable using a dictionary.\n" +
 		"Example:\n\t't' maps to 'ت'\n\t'tt' maps to 'ط'\n\t'7' maps to 'ح'",
 	Args: cobra.ExactArgs(1),
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Print(core.Transliterate(args[0], core.MappingStrategy))
+	RunE: func(cmd *cobra.Command, args []string) error {
+		arabicWord, err := core.Transliterate(args[0], core.MappingStrategy)
+		if err != nil {
+			return err
+		}
+		fmt.Print(arabicWord)
+		return nil
 	},
 }
 

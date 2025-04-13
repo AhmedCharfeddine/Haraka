@@ -43,7 +43,7 @@ You're always welcome to contribute by opening issues for suggestions or submitt
 
 ## Roadmap
 
-🔹 Support more arabic spelling rules (Tied Ta' `ة` and dha tuchel `ظ`)    
+🔹 Support more arabic spelling rules (Hemza `ء` and dha tuchel `ظ`)    
 🔹 Add support for common Arabic words  
 🔹 Implement a GUI version  
 🔹 System-wide integration for real-time typing  

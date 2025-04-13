@@ -8,9 +8,17 @@ func TestTransliterate(t *testing.T) {
 	}
 
 	for latin, want := range testCases {
-		var got = Transliterate(latin, MappingStrategy)
+		var got, _ = Transliterate(latin, MappingStrategy)
 		if got != want {
 			t.Errorf("got %q want %q", got, want)
 		}
+	}
+}
+
+func TestTransliterateShouldNotAcceptShortWord(t *testing.T) {
+	var _, err = Transliterate("ab", MappingStrategy)
+
+	if err == nil {
+		t.Error("Method should throw error on short words")
 	}
 }

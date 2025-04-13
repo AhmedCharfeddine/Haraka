@@ -14,8 +14,9 @@ func TestTokenize(t *testing.T) {
 		{"a7med", []string{"a", "7", "m", "d"}},
 		{"haytham", []string{"h", "y", "th", "m"}},
 		{"faares", []string{"f", "aa", "r", "s"}}, // "a" is removed (mid-vowel)
-		{"7araka", []string{"7", "r", "k"}},
+		{"7araka", []string{"7", "r", "k", "a"}},
 		{"shams", []string{"sh", "m", "s"}},
+		{"salmaa", []string{"s", "l", "m", "aa"}},
 	}
 
 	for _, test := range tests {

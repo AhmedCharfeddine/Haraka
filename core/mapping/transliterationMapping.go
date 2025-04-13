@@ -11,6 +11,9 @@ var TransliterationMap = map[string]string{
 	"h": "ه", "a": "ا", "5": "خ", "ou": "و",
 }
 
+const ALIF_MAQSURA = "ى"
+const TA_MARBUTA = "ة"
+
 func isValidKey(key string) bool {
 	_, exists := TransliterationMap[key]
 	return exists
