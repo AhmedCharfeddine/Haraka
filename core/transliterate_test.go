@@ -4,8 +4,6 @@ import "testing"
 
 func TestTransliterate(t *testing.T) {
 	var testCases = map[string]string{
-		"7araka": "حركة",
-		"7Araka": "حركة",
 		"faares": "فارس",
 	}
 

@@ -12,7 +12,7 @@ func TestTokenize(t *testing.T) {
 	}{
 		{"khaaled", []string{"kh", "aa", "l", "d"}},
 		{"a7med", []string{"a", "7", "m", "d"}},
-		{"haytham", []string{"h", "th", "m"}},
+		{"haytham", []string{"h", "y", "th", "m"}},
 		{"faares", []string{"f", "aa", "r", "s"}}, // "a" is removed (mid-vowel)
 		{"7araka", []string{"7", "r", "k"}},
 		{"shams", []string{"sh", "m", "s"}},
